@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StroykaStore</title>
+  <link rel="stylesheet" href="css/brands.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <a class="city button-open" href="#">Москва</a>
+            <nav class="menu">
+              <button class="menu__btn">
+                <span></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="brands.html">Бренды</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="delivery.html">Доставка</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="return.html">Возврат</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="documents.html">Документация</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="container">
+          <div class="header__content-inner">
+            <div class="header__content-item">
+              <a class="logo header__logo" href="index.html">
+                <img src="images/header/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="header__content-item">
+              <a class="catalog-link" href="catalog.html">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="a">
+                      <rect rx="0" width="23" height="23" transform="translate(.5 .5)" fill="#fff" fill-opacity="0" />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)" stroke="#2F323A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+                    <path d="M4 18h10M4 12h16M4 6h6" />
+                  </g>
+                </svg>
+                Каталог
+              </a>
+              <form class="header__form form-search" action="#">
+                <input class="form-search__input" type="text" placeholder="Поиск">
+                <button class="form-search__btn" type="button"></button>
+              </form>
+              <ul class="user-nav">
+                <li class="user-nav__item">
+                  <a class="user-nav__link user-nav__link--user popap-login-open" href="#popap-login">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <clipPath id="a">
+                          <rect rx="0" width="23" height="23" transform="translate(.5 .5)" fill="#fff" fill-opacity="0" />
+                        </clipPath>
+                      </defs>
+                      <g clip-path="url(#a)" stroke="#5D6066" stroke-width="2" stroke-linejoin="round">
+                        <path d="M11 19c-4.42 0-8-3.59-8-8 0-4.42 3.58-8 8-8 4.41 0 8 3.58 8 8 0 4.41-3.59 8-8 8z" />
+                        <path d="M21 21l-4.36-4.35" stroke-linecap="round" />
+                      </g>
+                    </svg>
+                    Профиль
+                  </a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link user-nav__link--box" href="orders.html">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <clipPath id="a">
+                          <rect rx="0" width="23" height="23" transform="translate(.5 .5)" fill="#fff" fill-opacity="0" />
+                        </clipPath>
+                      </defs>
+                      <g clip-path="url(#a)" stroke="#5D6066" stroke-width="2">
+                        <path
+                          d="M21 8c-.01-.36-.1-.7-.27-1-.18-.31-.43-.56-.73-.74l-7-4c-.31-.17-.65-.26-1-.26-.36 0-.7.09-1 .26l-7 4c-.31.18-.56.43-.74.74-.17.3-.26.64-.26 1v8c0 .35.09.69.26.99.18.31.43.56.74.73l7 4c.3.18.59.28 1 .28.4 0 .69-.1 1-.28l7-4c.3-.17.55-.42.73-.73.17-.3.26-.64.27-.99V8z" />
+                        <path d="M3.27 6.95L12 12l8.73-5.05" stroke-linejoin="round" stroke-linecap="round" />
+                      </g>
+                    </svg>
+                    Заказы
+                  </a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link user-nav__link--cart" href="cart.html">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <clipPath id="a">
+                          <rect rx="0" width="23" height="23" transform="translate(.5 .5)" fill="#fff" fill-opacity="0" />
+                        </clipPath>
+                      </defs>
+                      <g clip-path="url(#a)" stroke="#5D6066" stroke-width="2" stroke-linejoin="round">
+                        <path
+                          d="M9 22c-.56 0-1-.45-1-1 0-.56.44-1 1-1 .55 0 1 .44 1 1 0 .55-.45 1-1 1zm11 0c-.56 0-1-.45-1-1 0-.56.44-1 1-1 .55 0 1 .44 1 1 0 .55-.45 1-1 1z" />
+                        <path
+                          d="M1 1h4l2.68 13.38c.09.47.34.88.7 1.17.37.3.83.45 1.3.45h9.71c.47 0 .93-.15 1.3-.45.36-.29.61-.7.7-1.17L23 6H6"
+                          stroke-linecap="round" />
+                      </g>
+                    </svg>
+                    Корзина
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__category header-category">
+        <div class="container">
+          <ul class="header-category__list">
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Акции</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Строительные материалы</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Керамическая плитка</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Краски</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Сантехника</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Напольные покрытия</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Инструменты</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Обои</a>
+            </li>
+            <li class="header-category__list-item">
+              <a class="header-category__list-link" href="#">Окна</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal header__modal">
+        <div class="modal__content header__modal-content">
+          <p class="header__modal-title">
+            Выберите ваш город
+          </p>
+          <form class="header__modal-form form-search" action="#">
+            <input class="form-search__input" type="text" placeholder="Поиск">
+            <button class="form-search__btn" type="button"></button>
+          </form>
+          <ul class="header__modal-list">
+            <li class="header__modal-item">Москва</li>
+            <li class="header__modal-item">Санкт-Петербург</li>
+            <li class="header__modal-item">Новосибирск</li>
+            <li class="header__modal-item">Екатеринбург</li>
+            <li class="header__modal-item">Казань</li>
+            <li class="header__modal-item">Нижний Новгород</li>
+            <li class="header__modal-item">Челябинск</li>
+            <li class="header__modal-item">Самара</li>
+            <li class="header__modal-item">Ростов-на-Дону</li>
+            <li class="header__modal-item">Уфа</li>
+            <li class="header__modal-item">Омск</li>
+            <li class="header__modal-item">Красноярск</li>
+            <li class="header__modal-item">Воронеж</li>
+            <li class="header__modal-item">Пермь</li>
+            <li class="header__modal-item">Волгоград</li>
+          </ul>
+        </div>
+        <button class="modal__button button-close" type="button">Close</button>
+      </div>
+      <div id="popap-login" aria-hidden="true" class="popup popap-user popap-login ">
+        <div class="popup__wrapper popap-user__wrapper">
+          <button type="button" class="popup__close popap-user__close"></button>
+          <div class="popup__content popap-user__content">
+            <div class="popup__text popap-user__text">
+              <h2 class="popap-user page-title">
+                Вход
+              </h2>
+              <form class="popap-user__form" action="#">
+                <div class="popap-user__form-wrapper">
+                  <label class="popap-user__form-label">
+                    E-mail
+                    <input class="popap-user__form-input" type="email" placeholder="youmail@mail.com" name="user-login-email">
+                  </label>
+                  <label class="popap-user__form-label">
+                    Пароль
+                    <input class="popap-user__form-input" type="password" placeholder="****************"
+                      name="user-login-password">
+                  </label>
+                  <a class="popap-user__form-link" href="#">
+                    Забыли пароль?
+                  </a>
+                  <button class="popap-user__form-btn page-btn-accent" type="submit" name="user-login-btn">
+                    Войти
+                  </button>
+                  <a class="popap-user__form-reg popap-reg-open" href="#popap-reg">
+                    Создать учетную запись
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="popap-reg" aria-hidden="true" class="popup popap-user popap-reg">
+        <div class="popup__wrapper popap-user__wrapper">
+          <button data-close type="button" class="popup__close popap-user__close"></button>
+          <div class="popup__content popap-user__content">
+            <div class="popup__text popap-user__text">
+              <h2 class="popap-user page-title">
+                Регистрация
+              </h2>
+              <form class="popap-user__form" action="#">
+                <div class="popap-user__form-wrapper popap-user__form-wrapper--grid">
+                  <label class="popap-user__form-label">
+                    Имя
+                    <input class="popap-user__form-input" type="text" placeholder="Богдан" name="user-reg-name">
+                  </label>
+                  <label class="popap-user__form-label">
+                    E-mail
+                    <input class="popap-user__form-input" type="email" placeholder="youmail@mail.com" name="user-reg-email">
+                  </label>
+                  <label class="popap-user__form-label">
+                    Новый пароль
+                    <input class="popap-user__form-input" type="password" placeholder="****************"
+                      name="user-reg-passord">
+                  </label>
+                  <label class="popap-user__form-label">
+                    Подтверждение пароля
+                    <input class="popap-user__form-input" type="password" placeholder="****************"
+                      name="user-reg-passord-done">
+                  </label>
+                </div>
+                <button class="popap-user__form-btn page-btn-accent" type="submit" name="user-reg-btn">
+                  Зарегистрироваться
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="top">
+        <div class="container-big">
+          <div class="top__inner" style="background-image: url(images/top/top-brands.jpeg)">
+            <div class="top__nav">
+              <a class="top__link" href="#">
+                Главная
+              </a>
+              <span class="top__page-name">
+                Все продавцы
+              </span>
+            </div>
+            <h2 class="top__title">
+              Все бренды
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="popular-brands">
+        <div class="container">
+          <div class="popular-brands__top section-top">
+            <h2 class="popular-brands__title page-title">
+              Популярные бренды
+            </h2>
+            <a class="popular-brands__btn page-btn-more" href="brands.html">
+              Все бренды
+              <svg width="8.004" height="14.008" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13l6-6-6-6" stroke="#454950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="popular-brands__content">
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/1.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/2.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/3.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/4.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/5.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/6.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/7.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/8.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/9.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/10.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/11.png" alt="brands image">
+            </a>
+            <a class="popular-brands__item" href="brands.html">
+              <img src="images/brands/12.png" alt="brands image">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="brands-list">
+        <div class="container">
+          <div class="brands-list__top">
+            <div class="filters brands-list__filters">
+              <div class="filter-group brands-list__filter-group">
+                <div class="button-group brands-list__button-group" data-filter-group="name">
+                  <button class="filter-button brands-list__button is-checked" data-filter="">Все</button>
+                  <button class="filter-button brands-list__button" data-filter=".a">A</button>
+                  <button class="filter-button brands-list__button" data-filter=".b">B</button>
+                  <button class="filter-button brands-list__button" data-filter=".c">C</button>
+                  <button class="filter-button brands-list__button" data-filter=".d">D</button>
+                  <button class="filter-button brands-list__button" data-filter=".e">E</button>
+                  <button class="filter-button brands-list__button" data-filter=".f">F</button>
+                  <button class="filter-button brands-list__button" data-filter=".g">G</button>
+                  <button class="filter-button brands-list__button" data-filter=".h">H</button>
+                  <button class="filter-button brands-list__button" data-filter=".i">I</button>
+                  <button class="filter-button brands-list__button" data-filter=".j">J</button>
+                  <button class="filter-button brands-list__button" data-filter=".k">K</button>
+                  <button class="filter-button brands-list__button" data-filter=".l">L</button>
+                  <button class="filter-button brands-list__button" data-filter=".m">M</button>
+                  <button class="filter-button brands-list__button" data-filter=".n">N</button>
+                  <button class="filter-button brands-list__button" data-filter=".o">O</button>
+                  <button class="filter-button brands-list__button" data-filter=".p">P</button>
+                  <button class="filter-button brands-list__button" data-filter=".q">Q</button>
+                  <button class="filter-button brands-list__button" data-filter=".r">R</button>
+                  <button class="filter-button brands-list__button" data-filter=".s">S</button>
+                  <button class="filter-button brands-list__button" data-filter=".t">T</button>
+                  <button class="filter-button brands-list__button" data-filter=".u">U</button>
+                  <button class="filter-button brands-list__button" data-filter=".v">V</button>
+                  <button class="filter-button brands-list__button" data-filter=".w">W</button>
+                  <button class="filter-button brands-list__button" data-filter=".z">Z</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="brands-list__content filter-grid">
+            <div class="color-shape a brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                A
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  ASB-Woodline
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  AVS
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Alma Ceramica
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Alvaro-Banos
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Am.Pm
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Apecs
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Appetite
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Attribute
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Auto Standart
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Axima
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Azario
+                </a>
+              </div>
+            </div>
+            <div class="color-shape b brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                B
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  BLB
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  BOYSCOUT
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  BRAVAT
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Belani
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Belezza
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Belinka
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Blocker
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Bosch
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Bostik
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Braver
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Bussare
+                </a>
+              </div>
+            </div>
+            <div class="color-shape c brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                C
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape d brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                D
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape e brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                e
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape f brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                f
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape g brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                g
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape h brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                h
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape i brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                i
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape j brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                j
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape k brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                k
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape l brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                l
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape m brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                m
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape n brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                n
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape o brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                o
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape p brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                p
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape q brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                q
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape r brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                r
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape s brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                s
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape t brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                t
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape u brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                u
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape v brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                v
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape w brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                w
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+            <div class="color-shape z brands-list__box">
+              <div class="brands-list__box-item brands-list__box-item--one">
+                z
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Cemmix
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceramica Konskie
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+              <div class="brands-list__box-item">
+                <a class="brands-list__box-link" href="#">
+                  Ceresit
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="no-results">Нет результатов</div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-inner">
+            <div class="footer__top-info">
+              <a class="logo" href="index.html">
+                <img src="images/footer/logo.svg" alt="logo">
+              </a>
+              <a class="footer__top-email" href="mailto:info@stroykastore.ru">info@stroykastore.ru</a>
+              <p class="footer__top-address">Москва, ул. Камушкина 10</p>
+            </div>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="user-cabinet.html">
+                  Личный кабинет
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="catalog.html">
+                  Каталог
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  Стать продавцом
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="orders.html">
+                  Заказы
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="delivery.html">
+                  Доставка
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  Избранное
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="brands.html">
+                  Бренды
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="return.html">
+                  Возврат
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="cart.html">
+                  Корзина
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="contacts.html">
+                  Контакты
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="documents.html">
+                  Документация
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-copy">
+            © СтройкаСтор
+          </p>
+          <ul class="footer__bottom-list">
+            <li class="footer__bottom-item">
+              <img src="images/footer/visa.svg" alt="visa">
+            </li>
+            <li class="footer__bottom-item">
+              <img src="images/footer/mastercard.svg" alt="mastercard">
+            </li>
+            <li class="footer__bottom-item">
+              <img src="images/footer/maestro.svg" alt="maestro">
+            </li>
+            <li class="footer__bottom-item">
+              <img src="images/footer/mir.svg" alt="mir">
+            </li>
+          </ul>
+          <p class="footer__bottom-creator">
+            Cделано в KRUGLOV STUDIO
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
